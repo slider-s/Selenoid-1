@@ -22,9 +22,7 @@
             <parameters>
                 <parameter name="browserName" value="opera" />
                 <parameter name="browserVersion" value="50.0"/>
-                <parameter name="operaOptions">
-                    <option name="binary" value="/usr/bin/opera"/>
-                </parameter>
+                <parameter name="operaOptions" value="/usr/bin/opera" />
             </parameters>
             <classes>
                 <class name="p900.p900Test" />
