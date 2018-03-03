@@ -18,10 +18,10 @@
                 <class name="p900.p900Test" />
             </classes>
         </test>
-        <test name="Opera 51 Test">
+        <test name="Opera 50 Test">
             <parameters>
                 <parameter name="browserName" value="opera" />
-                <parameter name="browserVersion" value="51.0"/>
+                <parameter name="browserVersion" value="50.0"/>
             </parameters>
             <classes>
                 <class name="p900.p900Test" />
