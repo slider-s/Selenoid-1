@@ -7,7 +7,7 @@ public class p900Test extends WebDriverTestBase{
     public void openPage(){
         driver.get("http://p900.com.ua");
         try {
-            Thread.sleep(50000);
+            Thread.sleep(5000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
