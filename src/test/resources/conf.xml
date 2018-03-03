@@ -1,0 +1,13 @@
+<suite name="Parallel Tests" verbose="1" thread-count="2" parallel="tests">
+    <tests>
+        <test name="Chrome Test">
+            <parameters>
+                <parameter name="platform" value="Linux" />
+                <parameter name="remoteBrowser" value="chrome"/>
+            </parameters>
+            <classes>
+                <class name="p900.p900Test" />
+            </classes>
+        </test>
+    </tests>
+</suite>
