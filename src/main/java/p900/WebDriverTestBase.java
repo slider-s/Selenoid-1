@@ -21,8 +21,7 @@ public class WebDriverTestBase {
         browser.setBrowserName(browserName);
         browser.setVersion(browserVersion);
         if (browserName.equals("opera")){
-            browser.setCapability("operaOptions", "binary");
-            browser.setCapability("binary", "/usr/bin/opera");
+            browser.setCapability("operaOptions:binary", "/usr/bin/opera");
         }
         browser.setCapability("enableVNC", true);
         driver = new RemoteWebDriver(URI.create("http://localhost:4444/wd/hub").toURL(),browser);

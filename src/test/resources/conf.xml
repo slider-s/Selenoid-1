@@ -18,7 +18,7 @@
                 <class name="p900.p900Test" />
             </classes>
         </test>
-        <test name="Opera 50 Test">
+        <!--<test name="Opera 50 Test">
             <parameters>
                 <parameter name="browserName" value="opera" />
                 <parameter name="browserVersion" value="50.0"/>
@@ -27,6 +27,6 @@
             <classes>
                 <class name="p900.p900Test" />
             </classes>
-        </test>
+        </test>-->
     </tests>
 </suite>
