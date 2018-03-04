@@ -9,7 +9,7 @@
     <version>1.0-SNAPSHOT</version>
     <properties>
         <webdrivermanager.version>2.1.0</webdrivermanager.version>
-        <selenide.version>4.8</selenide.version>
+        <selenide.version>4.10.01</selenide.version>
         <testng.version>6.13.1</testng.version>
         <aspectj.version>1.8.13</aspectj.version>
         <maven.surefire.plugin>2.20.1</maven.surefire.plugin>
