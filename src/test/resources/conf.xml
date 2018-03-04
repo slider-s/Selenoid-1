@@ -1,6 +1,6 @@
 <suite name="Parallel Tests" verbose="1" thread-count="2" parallel="tests">
     <tests>
-<!--        <test name="Chrome 63 Test">
+        <test name="Chrome 63 Test">
             <parameters>
                 <parameter name="browserName" value="chrome" />
                 <parameter name="browserVersion" value="63.0"/>
@@ -17,8 +17,8 @@
             <classes>
                 <class name="p900.p900Test" />
             </classes>
-        </test>-->
-        <test name="Opera 50 Test">
+        </test>
+<!--        <test name="Opera 50 Test">
             <parameters>
                 <parameter name="browserName" value="opera" />
                 <parameter name="browserVersion" value="50.0"/>
@@ -26,6 +26,6 @@
             <classes>
                 <class name="p900.p900Test" />
             </classes>
-        </test>
+        </test>-->
     </tests>
 </suite>
