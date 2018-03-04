@@ -1,6 +1,7 @@
 package p900;
 
 import org.openqa.selenium.Dimension;
+import org.openqa.selenium.opera.OperaOptions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.annotations.AfterClass;
@@ -21,7 +22,9 @@ public class WebDriverTestBase {
         browser.setBrowserName(browserName);
         browser.setVersion(browserVersion);
         if (browserName.equals("opera")){
-            browser.setCapability("opera.binary", "/usr/bin/opera");
+            //browser.setCapability("opera.binary", "/usr/bin/opera");
+            OperaOptions expectedOperaOptions = new OperaOptions();
+            expectedOperaOptions.setBinary("/usr/bin/opera");
         }
         browser.setCapability("enableVNC", true);
         driver = new RemoteWebDriver(URI.create("http://localhost:4444/wd/hub").toURL(),browser);
