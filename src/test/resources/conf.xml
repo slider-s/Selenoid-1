@@ -7,7 +7,7 @@
             </parameters>
             <classes>
                 <class name="p900.p900Test" />
-                <class name="promenuTest" />
+                <class name="p900.promenuTest" />
             </classes>
         </test>
         <test name="Firefox 57 Test">
@@ -17,7 +17,7 @@
             </parameters>
             <classes>
                 <class name="p900.p900Test" />
-                <class name="promenuTest" />
+                <class name="p900.promenuTest" />
             </classes>
         </test>
 <!--        <test name="Opera 50 Test">
