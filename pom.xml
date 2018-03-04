@@ -9,7 +9,7 @@
     <version>1.0-SNAPSHOT</version>
     <properties>
         <webdrivermanager.version>2.1.0</webdrivermanager.version>
-<!--        <selenide.version>4.10.01</selenide.version>-->
+        <selenide.version>4.10.01</selenide.version>
         <testng.version>6.13.1</testng.version>
         <aspectj.version>1.8.13</aspectj.version>
         <maven.surefire.plugin>2.20.1</maven.surefire.plugin>
@@ -22,28 +22,21 @@
             <artifactId>webdrivermanager</artifactId>
             <version>${webdrivermanager.version}</version>
         </dependency>
-<!--        <dependency>
+        <dependency>
             <groupId>com.codeborne</groupId>
             <artifactId>selenide</artifactId>
             <version>${selenide.version}</version>
-        </dependency>-->
+        </dependency>
         <dependency>
             <groupId>org.testng</groupId>
             <artifactId>testng</artifactId>
             <version>${testng.version}</version>
         </dependency>
-        <dependency>
+<!--        <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-java</artifactId>
             <version>${selenium.version}</version>
-        </dependency>
-        <!-- https://mvnrepository.com/artifact/com.opera/operadriver -->
-        <dependency>
-            <groupId>com.opera</groupId>
-            <artifactId>operadriver</artifactId>
-            <version>1.5</version>
-        </dependency>
-
+        </dependency>-->
     </dependencies>
     <build>
         <plugins>
