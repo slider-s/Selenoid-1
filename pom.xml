@@ -37,6 +37,13 @@
             <artifactId>selenium-java</artifactId>
             <version>${selenium.version}</version>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/com.opera/operadriver -->
+        <dependency>
+            <groupId>com.opera</groupId>
+            <artifactId>operadriver</artifactId>
+            <version>1.5</version>
+        </dependency>
+
     </dependencies>
     <build>
         <plugins>
