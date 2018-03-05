@@ -27,7 +27,7 @@ public class WebDriverTestBase {
             hashmap.put("binary", "/usr/bin/opera");
             browser.setCapability("operaOptions", hashmap);
         }
-            driver = new RemoteWebDriver(URI.create("http://localhost:4444/wd/hub").toURL(), browser);
+            driver = new RemoteWebDriver(URI.create("http://18.197.43.132:4444/wd/hub").toURL(), browser);
             driver.manage().window().setSize(new Dimension(1920, 1080));
 
     }
