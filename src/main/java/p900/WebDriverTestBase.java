@@ -9,10 +9,7 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
-
 import java.net.URI;
-import java.util.HashMap;
-import java.util.Map;
 import java.util.concurrent.TimeUnit;
 
 public class WebDriverTestBase {
@@ -29,15 +26,10 @@ public class WebDriverTestBase {
             driver.manage().window().maximize();
         }else {
             DesiredCapabilities browser = new DesiredCapabilities();
-            browser.setBrowserName(browserName);
-            browser.setVersion(browserVersion);
+            browser.setBrowserName("chrome");
+            browser.setVersion("65");
             browser.setCapability("enableVNC", true);
-            if (browserName.equals("opera")) {
-                Map<String, Object> hashmap = new HashMap<String, Object>();
-                hashmap.put("binary", "/usr/bin/opera");
-                browser.setCapability("operaOptions", hashmap);
-            }
-            driver = new RemoteWebDriver(URI.create("http://18.197.43.132:4444/wd/hub").toURL(), browser);
+            driver = new RemoteWebDriver(URI.create("http://localhost:4444/wd/hub").toURL(), browser);
             driver.manage().window().setSize(new Dimension(1920, 1080));
         }
 
