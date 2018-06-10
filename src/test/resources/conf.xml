@@ -1,23 +1,15 @@
-<suite name="Parallel Tests" verbose="1" thread-count="4" parallel="tests">
+<suite name="Parallel Tests" verbose="1" thread-count="1" parallel="tests">
     <tests>
-        <test name="Chrome 63 Test">
-            <parameters>
-                <parameter name="browserName" value="chrome" />
-                <parameter name="browserVersion" value="65"/>
-            </parameters>
+        <test name="Chrome Test">
             <classes>
                 <class name="p900.p900Test" />
                 <class name="p900.promenuTest" />
             </classes>
         </test>
-        <test name="Firefox 57 Test">
-            <parameters>
-                <parameter name="browserName" value="firefox" />
-                <parameter name="browserVersion" value="59"/>
-            </parameters>
+        <test name="Firefox Test">
             <classes>
-                <class name="p900.p900Test" />
                 <class name="p900.promenuTest" />
+                <class name="p900.p900Test" />
             </classes>
         </test>
     </tests>
