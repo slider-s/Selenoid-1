@@ -1,0 +1,10 @@
+sudo: required
+language: java
+jdk:
+  - oraclejdk8
+services:
+  - docker
+script:
+  - bash <(curl -s https://aerokube.com/cm/bash)
+  - ./cm selenoid start --vnc --tmpfs 128
+  - mvn test

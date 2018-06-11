@@ -1,6 +1,7 @@
 package p900;
 
 import com.codeborne.selenide.Configuration;
+import com.codeborne.selenide.WebDriverRunner;
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
@@ -14,7 +15,7 @@ public class WebDriverTestBase {
 
     @BeforeClass
     public void setUp() throws Exception {
-        String runType = "local";
+        String runType = "selenoid";
         switch (runType) {
             case ("local"):
                 Configuration.browser = "chrome";
@@ -22,10 +23,11 @@ public class WebDriverTestBase {
             case ("selenoid"):
                 DesiredCapabilities browser = new DesiredCapabilities();
                 browser.setBrowserName("chrome");
-                browser.setVersion("65");
+                browser.setVersion("66");
                 browser.setCapability("enableVNC", true);
                 driver = new RemoteWebDriver(URI.create("http://localhost:4444/wd/hub").toURL(), browser);
                 driver.manage().window().setSize(new Dimension(1920, 1080));
+                WebDriverRunner.setWebDriver(driver);
                 break;
         }
 
